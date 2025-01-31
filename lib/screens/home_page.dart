@@ -238,13 +238,13 @@ class _HomePageState extends State<HomePage> {
                           this.setState(() {});
                           Navigator.pop(context);
                         },
-                        child: const Text('Update Note'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF8E91E4),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
                         ),
+                        child: const Text('Update Note'),
                       ),
                     ],
                   ),
@@ -532,7 +532,7 @@ class _HomePageState extends State<HomePage> {
               // Note Date
               Row(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     '${note.date.month}/${note.date.day}/${note.date.year}',
                     style: TextStyle(
@@ -605,13 +605,13 @@ class _HomePageState extends State<HomePage> {
                           await addNote(); // Added await keyword here
                           Navigator.pop(context);
                         },
-                        child: const Text('Add Note'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF8E91E4),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
                         ),
+                        child: const Text('Add Note'),
                       ),
                     ],
                   ),

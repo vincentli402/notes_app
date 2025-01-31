@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+//import 'package:firebase_core/firebase_core.dart';
+import 'firebase_option.dart'; // Import the new file
 import 'screens/home_page.dart';
 import 'screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,16 +10,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Firebase with web support
-  await Firebase.initializeApp(
-    options: const FirebaseOptions(
-        apiKey: "AIzaSyDvi8KjykZyNkTDI8bALWzHrpICTxXnBA0",
-        authDomain: "team-3-notesbook-app.firebaseapp.com",
-        projectId: "team-3-notesbook-app",
-        storageBucket: "team-3-notesbook-app.appspot.com",
-        messagingSenderId: "968874696260",
-        appId: "1:968874696260:web:5f62b5f257909057fc6611",
-        measurementId: "G-MZD4C7WYT7"),
-  );
+  await FirebaseConfig.initialize(); // Call Firebase initialization from the separate file
+
 
   runApp(const NotebookApp());
 }
