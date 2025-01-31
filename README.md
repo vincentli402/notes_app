@@ -1,4 +1,3 @@
-# group-project-one-team-3
 # Take Note
 
 'Take Note' is a website where users can add, edit, and delete notes. To access 'Take Note', users have the option to register an account and sign in, or use Google sign in. With the notes that users create, they will be able to filter based on the category they assign their notes to. These notes are only accessible to the user who created them and will be saved for future references. To try yourself, here is a link to access 'Take Note': https://team-3-notesbook-app.web.app/
