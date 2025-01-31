@@ -8,12 +8,12 @@
 3. Type and enter in the terminal:
 `git clone 'INSERT COPIED LINK'`
 4. Then type and enter:
-`cd group-project-one-team-3`
+`cd notes_app`
 5. To ensre all dependencies are downloaded correctly, run:
 `flutter clean`
 `flutter pub get`
 6. Then, you can run the webpage using the commands:
-`cd notesbook_app` `flutter run`
+`flutter run`
 You may be asked to chose a device to run the webpage on.
 7. Once the webpage is open, you can either sign in with google, log in with an existing account, or create a new account.
 8. Then, Take Note!
